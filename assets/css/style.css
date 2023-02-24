@@ -212,12 +212,11 @@ a:hover {
 }
 
 /*------/ Socials /------*/
-.socials {
-  padding: 1.5rem 0;
-}
+
 
 .socials ul li {
   display: inline-block;
+  margin: 10px;
 }
 
 .socials .ico-circle {
@@ -357,6 +356,38 @@ a:hover {
 }
 
 .back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.whatsapp-btn {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  left: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #25D366;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.whatsapp-btn i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.whatsapp-btn:hover {
+  background: #075E54;
+  color: #fff;
+}
+
+.whatsapp-btn.active {
   visibility: visible;
   opacity: 1;
 }
